@@ -20,13 +20,17 @@
 
 1. Faça um **Fork** deste repositório;
 2. Clone localmente: `git clone https://github.com/SEU_USERNAME/androidDev-DroidSmiths.git`;
-3. Adicione o remote upstream para manter seu repositório local atualizado. Por exemplo: `git remote add upstream https://github.com/jonas-holanda/androidDev-DroidSmiths.git`;
+3. Adicione o remote upstream para manter seu repositório local atualizado com o repositório original da equipe, com o comando: `git remote add upstream https://github.com/jonas-holanda/androidDev-DroidSmiths.git`;
     > Utilize o comando `git pull upstream main` para baixar e mesclar as alterações no seu repositório local com base na branch `main` deste repositório original da equipe de onde você fez o fork, ou `git fetch upstream main` para baixar sem mesclar.
 4. Crie/Referêncie uma nova **branch** e nomeie como `feat/dx-x/SEU_USERNAME` (os Xs indicam o desafio e o nível respectivamente, por exemplo: `feat/d2-iniciante/jonas-holanda`): `git checkout -b feat/dx-x/SEU_USERNAME`;
-    > Exemplo: `git checkout -b feat/community/elidianaandrade` no caso do desafio 2 iniciante seria: `git checkout -b feat/d2-iniciante/jonas-holanda`
+    > Exemplo: `git checkout -b feat/dx-x/jonas-holanda` **no caso do Desafio 2 Iniciante seria**: `git checkout -b feat/d2-iniciante/jonas-holanda`
 5. Acesse a pasta do respectivo desafio, e faça as alterações necessárias no arquivo kotlin do projeto.
 
-6. Adicione suas alterações a "staging area" com o comando `git add Desafio_2/Iniciante/src/main/kotlin/ConservacaoMarinha.kt ` (**Para o Desafio 2 Iniciante**), ou simplesmente `git add .` (mas tendo atenção com o que adicionou);
-8. Crie um commit e adicione a mensagem indicando a adição do seu perfil `git commit -m"feat: sua alteração realizada"`;
+6. Adicione suas alterações a "staging area" com o comando `git add Desafio_2/Iniciante/src/main/kotlin/ConservacaoMarinha.kt ` (**Para o Desafio 2 Iniciante**), ou simplesmente `git add .` (mas tendo atenção com os arquivos que você adicionou. Para ver quais arquivos foram adicionados você pode usar o comando `git status`);
+8. Crie um commit e adicione a mensagem indicando a alteração realizada `git commit -m"feat: sua alteração realizada"`;
 9. Envie as alterações para o seu repositório remoto `git push origin feat/dx-x/SEU_USERNAME`; 
 10. Crie um **Pull Request**.
+11. Depois de criado o Pull Request você pode voltar para a sua branch main com o comando `git checkout main`
+12. E para fazer novas alterações use os comandos `git pull upstream main` ou `git fetch upstream main` que pegam os dados do repositório original da equipe, assim tendo os arquivos mais recentes, mostrado no Tópico 3.
+
+**Caso você não conheça muito sobre o Git, acesse este repositório que eu fiz quando estava fazendo um curso de git/github: [Acessar Repositório de comandos Git](https://github.com/jonas-holanda/projeto1-git)**

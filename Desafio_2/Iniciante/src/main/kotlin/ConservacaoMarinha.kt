@@ -1,8 +1,8 @@
 class ConservacaoMarinha(
     //construtor primário
-    var tipoAmbiente: String,
-    var areaProtegidaEmKm2: Double,
-    var possuiProgramaMonitoramento: Boolean
+    tipoAmbiente: String,
+    areaProtegidaEmKm2: Double,
+    possuiProgramaMonitoramento: Boolean
 ) {
     // Função init 
     init {
@@ -17,6 +17,21 @@ class ConservacaoMarinha(
         false // Assume que não possui programa de monitoramento por padrão
     )
 
+    // TODO CRIAR GETTER E SETTER PARA tipoAmbiente
+
+
+    // TODO CRIAR GETTER E SETTER PARA areaProtegidaEmKm2
+
+
+    // Getter de Setter para possuiProgramaMonitoramento
+    var possuiProgramaMonitoramento: Boolean = possuiProgramaMonitoramento
+        get() {
+           return field
+        }
+        set(value) {
+            field = value
+        }
+
     override fun toString(): String {
         return """
             Tipo de Ambiente: $tipoAmbiente
@@ -27,9 +42,29 @@ class ConservacaoMarinha(
 }
 
 fun main() {
-    val conservacao1 = ConservacaoMarinha("Coral", 100.0, true)
+    var tipoAmbiente: String = ""
+    var areaProtegidaEmKm2: Double = 0.0
+    var possuiProgramaMonitoramento: Boolean = false
+    var respostaProgMonitoramento = ""
+
+    // TODO Criar a entrada de dados para a variável tipoAmbiente
+
+    // TODO Criar a entrada de dados para a variável areaProtegidaEmKm2 com as conversões de tipo
+
+    // Entrada de dados de possuiProgramaMonitoramento
+    println("Possui programas de monitoramento? (sim ou não)")
+    respostaProgMonitoramento = readln().lowercase()
+    if (respostaProgMonitoramento == "sim") {
+        possuiProgramaMonitoramento = true
+    } else if (respostaProgMonitoramento == "não" || respostaProgMonitoramento == "nao") {
+        possuiProgramaMonitoramento = false
+    }
+
+    // TODO Adicionar as entradas de dados das variáveis tipoAmbiente e areaProtegidaEmKm2
+    val conservacao1 = ConservacaoMarinha("Coral", 100.0, possuiProgramaMonitoramento)
     println(conservacao1)
-    
+
+
     val conservacao2 = ConservacaoMarinha("Manguezal", 50.0)
     println(conservacao2)
 

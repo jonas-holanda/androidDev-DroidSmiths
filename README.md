@@ -3,9 +3,9 @@
 **Repositório contendo os desafios e atividades realizadas pela equipe DroidSmiths no curso Android Dev. Onde tem como linguagem o Kotlin para trabalhar com o mobile.**
 
 ## Membros da Equipe
-![Jonas Holanda](https://avatars.githubusercontent.com/u/138180385?v=4) | ![Nelson Caracas](https://avatars.githubusercontent.com/u/124903742?s=400&u=fee3652b8af4fbbb8f20bb8c00d1aae48f002b50&v=4) | ![Helen Santos](https://img.freepik.com/free-vector/user-circles-set_78370-4704.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid) | ![Leonardo Vinicius](https://avatars.githubusercontent.com/u/87584069?v=4) | 
+![Jonas Holanda](https://avatars.githubusercontent.com/u/138180385?v=4) | ![Nelson Caracas](https://avatars.githubusercontent.com/u/124903742?s=400&u=fee3652b8af4fbbb8f20bb8c00d1aae48f002b50&v=4) | ![Helen Santos](https://avatars.githubusercontent.com/u/173499841?v=4) | ![Leonardo Vinicius](https://avatars.githubusercontent.com/u/87584069?v=4) | 
 | :--: |:--:| :--: | :--: | 
-| [![Jonas Holanda](https://img.shields.io/badge/-Jonas%20Holanda-30A3DC?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jonas-holanda) | [![Nelson Caracas](https://img.shields.io/badge/-Nelson%20Caracas-30A3DC?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ncaracas) | [![Helen Santos](https://img.shields.io/badge/-Helen%20Santos-30A3DC?style=for-the-badge&logo=github&logoColor=white)](#) | [![Leonardo Vinicius](https://img.shields.io/badge/-Leonardo%20Vinicius-30A3DC?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LVMdS) |
+| [![Jonas Holanda](https://img.shields.io/badge/-Jonas%20Holanda-30A3DC?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jonas-holanda) | [![Nelson Caracas](https://img.shields.io/badge/-Nelson%20Caracas-30A3DC?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ncaracas) | [![Helen Santos](https://img.shields.io/badge/-Helen%20Santos-30A3DC?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sunHelen12) | [![Leonardo Vinicius](https://img.shields.io/badge/-Leonardo%20Vinicius-30A3DC?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LVMdS) |
 
 ## Desafios do Bootcamp
 

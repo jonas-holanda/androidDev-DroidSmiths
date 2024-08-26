@@ -4,6 +4,9 @@ class ConservacaoMarinha(
     areaProtegidaEmKm2: Double,
     possuiProgramaMonitoramento: Boolean
 ) {
+    // Variável backing field para tipoAmbiente
+    private var _tipoAmbiente: String = tipoAmbiente
+
     // Função init 
     init {
         // adicionar validações ou lógica adicional aqui, se necessário
@@ -17,8 +20,16 @@ class ConservacaoMarinha(
         false // Assume que não possui programa de monitoramento por padrão
     )
 
-    // TODO CRIAR GETTER E SETTER PARA tipoAmbiente
-
+    // Getter e Setter para tipoAmbiente
+    var tipoAmbiente: String
+        get() {
+            return _tipoAmbiente
+        }
+        set(value) {
+            // Validação opcional
+            require(value.isNotEmpty()) { "O tipo de ambiente não pode ser vazio." }
+            _tipoAmbiente = value
+        }
 
     // TODO CRIAR GETTER E SETTER PARA areaProtegidaEmKm2
 
@@ -47,7 +58,9 @@ fun main() {
     var possuiProgramaMonitoramento: Boolean = false
     var respostaProgMonitoramento = ""
 
-    // TODO Criar a entrada de dados para a variável tipoAmbiente
+    // Entrada de dados para tipoAmbiente
+    println("Digite o tipo de ambiente marinho:")
+    tipoAmbiente = readln()
 
     // TODO Criar a entrada de dados para a variável areaProtegidaEmKm2 com as conversões de tipo
 
@@ -61,7 +74,7 @@ fun main() {
     }
 
     // TODO Adicionar as entradas de dados das variáveis tipoAmbiente e areaProtegidaEmKm2
-    val conservacao1 = ConservacaoMarinha("Coral", 100.0, possuiProgramaMonitoramento)
+    val conservacao1 = ConservacaoMarinha(tipoAmbiente, 100.0, possuiProgramaMonitoramento)
     println(conservacao1)
 
 

@@ -31,7 +31,15 @@ class ConservacaoMarinha(
             _tipoAmbiente = value
         }
 
-    // TODO CRIAR GETTER E SETTER PARA areaProtegidaEmKm2
+
+    // GETTER E SETTER PARA areaProtegidaEmKm2
+    var areaProtegidaEmKm2: Double = areaProtegidaEmKm2
+        get() {
+            return field
+        }
+        set(value) {
+            field = value
+        }
 
 
     // Getter de Setter para possuiProgramaMonitoramento
@@ -50,6 +58,7 @@ class ConservacaoMarinha(
             Possui Monitoramento: ${if (possuiProgramaMonitoramento) "Sim" else "Não"}
         """.trimIndent()
     }
+
 }
 
 fun main() {
@@ -62,7 +71,9 @@ fun main() {
     println("Digite o tipo de ambiente marinho:")
     tipoAmbiente = readln()
 
-    // TODO Criar a entrada de dados para a variável areaProtegidaEmKm2 com as conversões de tipo
+    //Entrada de dados para a variável areaProtegidaEmKm2
+    print("Digite a área protegida em Km²: ")
+    areaProtegidaEmKm2  = readlnOrNull()?.toDouble()?: 0.0
 
     // Entrada de dados de possuiProgramaMonitoramento
     println("Possui programas de monitoramento? (sim ou não)")
@@ -73,8 +84,8 @@ fun main() {
         possuiProgramaMonitoramento = false
     }
 
-    // TODO Adicionar as entradas de dados das variáveis tipoAmbiente e areaProtegidaEmKm2
-    val conservacao1 = ConservacaoMarinha(tipoAmbiente, 100.0, possuiProgramaMonitoramento)
+    // Entradas de dados das variáveis tipoAmbiente e areaProtegidaEmKm2
+    val conservacao1 = ConservacaoMarinha(tipoAmbiente, areaProtegidaEmKm2, possuiProgramaMonitoramento)
     println(conservacao1)
 
 

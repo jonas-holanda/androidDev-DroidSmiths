@@ -21,6 +21,20 @@
 | Nível do Desafio | Resolução do Desafio |
 | :-------------: | :-------------------: |
 | 🔹🔈 Nível Iniciante | [![Ver Código](https://img.shields.io/badge/Ver%20C%C3%B3digo-a97bff?style=for-the-badge&logo=kotlin&logoColor=white)](./Desafio_2/Iniciante/src/main/kotlin/ConservacaoMarinha.kt) |
+| 🔹🔈 Nível Intermediário | [![Ver Código](https://img.shields.io/badge/Ver%20C%C3%B3digo-a97bff?style=for-the-badge&logo=kotlin&logoColor=white)](./Desafio_2/Intermediario/ConservacaoMarinha.kt) |
+
+#### Desafio 2 - Nível Intermediário
+
+No nível intermediário, o desafio é criar uma hierarquia de classes em Kotlin para modelar um sistema de conservação marinha. A classe base, `ConservacaoMarinha`, define propriedades comuns como o tipo de ambiente (`TipoAmbiente`), a área protegida em km², e se possui programas de monitoramento. As classes derivadas `ReservaMarinha` e `AreaProtegidaMarinha` estendem a funcionalidade da classe base adicionando atributos específicos, como o tipo de reserva ou proteção.
+
+O código utiliza o modificador `lateinit` para inicializar as instâncias das classes posteriormente no método `main()`. O uso do comando `with` permite trabalhar com essas instâncias de forma mais fluida, melhorando a legibilidade do código.
+
+Para compilar e executar o programa, utilize os seguintes comandos:
+
+```bash
+kotlinc ConservacaoMarinha.kt -include-runtime -d ConservacaoMarinha.jar
+java -jar ConservacaoMarinha.jar
+```
 
 ## Como Contribuir
 
@@ -71,8 +85,6 @@
 
 **Descrição da Interação:**
 
-**Descrição da Interação:**
-
 No exemplo de interação com o terminal, o usuário executa o programa `ConservacaoMarinha.jar` utilizando o comando `java -jar ConservacaoMarinha.jar`. O programa, que é desenvolvido em Kotlin, solicita que o usuário insira dados relacionados a um ambiente marinho protegido:
 
 1. **Tipo de Ambiente Marinho**: O usuário é solicitado a inserir o tipo de ambiente marinho (por exemplo, "Manguezal").
@@ -84,5 +96,3 @@ Após a entrada de dados, o programa exibe os resultados formatados em uma tabel
 Por fim, o terminal exibe o conteúdo do código-fonte `ConservacaoMarinha.kt`, que define a classe `ConservacaoMarinha` com suas propriedades e métodos, incluindo validação de entradas e a representação formatada dos dados. A classe permite a criação de objetos que representam diferentes cenários de conservação marinha, manipulando as propriedades como tipo de ambiente, área protegida, e a existência de monitoramento.
 
 **Para mais detalhes sobre o Git e comandos básicos, consulte o [Repositório de Comandos Git](https://github.com/jonas-holanda/projeto1-git).**
-
----

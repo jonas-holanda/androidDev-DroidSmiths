@@ -50,7 +50,7 @@
  * @param reserva The marine reserve object.
  * @param areaProtegida The marine protected area object.
  */
- 
+
 // Enumerador TipoAmbiente
 enum class TipoAmbiente {
     CORAL, MANGUEZAL
